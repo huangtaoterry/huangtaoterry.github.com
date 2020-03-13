@@ -5,7 +5,7 @@ You can use the [editor on GitHub](https://github.com/huangtaoterry/huangtaoterr
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
 
-[20200313](https://github.com/huangtaoterry/huangtaoterry.github.com/1.html)
+[20200313](https://huangtaoterry.github.com/1.html)
 
 
 ### Markdown
