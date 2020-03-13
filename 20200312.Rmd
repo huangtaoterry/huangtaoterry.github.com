@@ -1,0 +1,121 @@
+---
+title: "Untitled"
+author: "Huang Tao"
+date: "2020/3/12"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+
+
+library(ggplot2)
+
+# 100 random numbers from standard norm 
+data <- data.frame(value =rnorm(100))
+
+ggplot(data, aes(x=value)) + 
+  geom_histogram()
+
+```
+
+
+
+
+
+```{r}
+
+# library
+library(ggplot2)
+library(dplyr)
+
+# Build dataset with different distributions
+data <- data.frame(
+  type = c( rep("variable 1", 1000), rep("variable 2", 1000) ),
+  value = c( rnorm(1000), rnorm(1000, mean=4) )
+)
+
+# Represent it
+p <- data %>%
+  ggplot( aes(x=value, fill=type)) +
+    geom_histogram( color="#e9ecef", alpha=0.6, position = 'identity')
+
+
+
+p
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## R markdown
+
+R markdown is an interactive report for R code.
+
+* Text formating
+
+write in **bold** or *italic*
+
+add horizontal line by adding 3 stars:
+
+***
+
+add 3 blank lines
+<br><br><br>
+
+solve the probelm of too much white space around image
+library(png)
+library(grid)
+img <- readPNG('')
+grid.raster(img)
+
+{r, fig.align='center', fig.width=6,fig.height=6,fig.cap='Fig.1 This is a figure.'}
+
+* Insert equation in **Latex** formating
+
+$A = (\pi * \lambda \times r^{4} ) / \alpha$
+
+
+* Layout of image is set in {r, out.width = c('50%', '50%')}
+
+
+## A
+
+content
+
+## B
+
+content #2
+
+## C 
+
+
+## First
+A first section
+
+## Second
+content of sub-chapter #2
+
+## Third
+content of sub-chapter #3
+content #3
+
